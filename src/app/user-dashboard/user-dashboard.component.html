@@ -1,0 +1,194 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    
+  <div class="container-fluid">
+     
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+         
+          <img src="./assets/img5.jpg" height="40px" width="80px"/>
+        
+    
+        <h2 class="text-center" style="margin-left: 450px;"> User Dashboard</h2>
+      </ul>
+      <form class="d-flex">
+
+        
+        <button class="btn btn-danger my-2 my-sm" type="submit" style="font-size:small; float: right;" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span> &nbsp; Logout</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="3000">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="./assets/img11.jpg" style="width:100%;height:350px" alt="not found">
+    </div>
+    
+    <div class="item">
+      <img src="./assets/az.jpg"  style="width:100%;height:350px" alt="not found">
+    </div>
+    
+    <div class="item">
+      <img src="./assets/img3.jpg"  style="width:100%;height:350px" alt="not found">
+    </div>
+  </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">next</span>
+    </a>
+  </div>
+  </div>
+  <br><br>
+  <div style="color: red; font-size: large;" >
+    <marquee scrollamount="10"><b>You should use your Aadhaar without any hesitation for proving your identity and doing transactions, just like you use your bank account number, PAN card, debit card, credit card, etc., wherever required. What UIDAI has advised is that Aadhaar card should be freely used for proving identity and doing transactions, but should not be put on public platforms like Twitter, Facebook, etc.</b></marquee><br>
+  <br><br></div>
+
+    <div class="container">
+      <table class="table-condensed table-stripped table-hovered" style="font-size: large;">
+        <tr>
+          <td>Apply for new Aadhar Card : <button class="btn btn-primary" style="margin-left: 77px;" (click)="newAadhar()">Click here</button></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>Apply for new PAN Card : <button class="btn btn-primary" style="margin-left: 77px;" (click)="newPan()">Click here</button></td>          
+        </tr>  
+      </table>
+      <br>
+      <table class="table-condensed table-stripped table-hovered" style="font-size: large;">
+        <tr>
+          <td>Update/Delete Aadhar Card : <button class="btn btn-primary" style="margin-left: 70px;" (click)="searchAadhar()">Click here</button></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>Update/Delete PAN Card : <button class="btn btn-primary" style="margin-left: 70px;" (click)="searchPan()">Click here</button></td>          
+        </tr>  
+      </table>
+      <br>
+      <table class="table-condensed table-stripped table-hovered" style="font-size: large;">
+        <tr>
+          <td>Link Aadhar Card and PAN Card : <button class="btn btn-primary" style="margin-left: 40px;" (click)="link()">Click here</button></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </td>
+          <td>Check Link Status : <button class="btn btn-primary" style="margin-left: 130px;" (click)="linkStatus()">Click here</button></td>          
+        </tr>  
+      </table>
+      <br>
+
+    </div>
+    <br><br><br>
+ 
+<div class="container">
+<router-outlet></router-outlet>
+</div>
+
+<footer class="footer"    >
+<!-- Footer -->
+<div class="text-center text-lg-start bg-white text-muted" >
+<!-- Section: Social media -->
+<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+  <!-- Left -->
+ <!-- <div class="me-5 d-none d-lg-block" style="margin-left:350px ;">
+    <span>Get connected with us on social networks:</span>
+  </div>-->
+  <!-- Left -->
+
+  <!-- Right -->
+  <div style="margin-left:450px">
+    <a href="#" class="fa fa-facebook"></a>&nbsp;
+    <a href="#" class="fa fa-twitter"></a>&nbsp;
+    <a href="#" class="fa fa-google"></a>&nbsp;
+    <a href="#" class="fa fa-linkedin"></a>&nbsp;
+    <a href="#" class="fa fa-youtube"></a>&nbsp;
+    <a href="#" class="fa fa-instagram"></a>&nbsp;
+    <a href="#" class="fa fa-pinterest"></a>&nbsp;
+    
+  </div>
+  <!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          <i class="fas fa-gem me-3 text-secondary"></i>About Us
+        </h6>
+        <p style="font-size: small;"> 
+          <b>Protean eGov Technologies Ltd.,</b> is one of the key IT enabled service providers engaged in conceptualizing, developing and executing nationally critical and population scale greenfield technology solutions. The company has extensively collaborated with the government over the last 25 years in creating digital public infrastructure and developing innovative citizen centric e-governance solutions. 
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">
+          Quick Links
+        </h6>
+        <p>
+          <a href="https://www.proteantech.in/vision-mission.html" class="text-reset">Vision & Mission</a>
+        </p>
+        <p>
+          <a href="https://www.proteantech.in/core-values.html" class="text-reset">Core Values</a>
+        </p>
+        <p>
+          <a href="https://www.proteantech.in/leadership-teamUAT25.html" class="text-reset">Leadership Team</a>
+        </p>
+        <p>
+          <a href="https://www.proteantech.in/certifications.html" class="text-reset">Awards & Certifications</a>
+        </p>
+      </div>
+    
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+       
+        <p><span class="glyphicon glyphicon-home"></span> &nbsp; Time Towers,Kamala Mills Compound, Lower Parel, Mumbai - 400 013</p>
+        <p>
+          <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+          proteanmumbai@proteantech.in
+        </p>
+        <p><span class="glyphicon glyphicon-phone-alt"></span> &nbsp; + 01 234 567 88</p>
+        <p><span class="glyphicon glyphicon-earphone"></span> &nbsp; + 01 234 567 89</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: brown; color: black;" >
+  Copyright© 2021 Protean eGov Technologies Ltd..All rights reserved
+  <a class="text-reset fw-bold" href="https://www.proteantech.in/">www.proteantech.in/</a>
+</div>
+<!-- Copyright -->
+</div>
+<!-- Footer -->
+</footer>
